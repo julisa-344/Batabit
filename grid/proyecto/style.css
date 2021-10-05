@@ -1,0 +1,144 @@
+:root {
+    --letter: #FDAB07;
+    --back-ground: #03161D;
+    --decorating: #055659;
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: var(--decorating);
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8% 20% 15% 217px 15% 29%;
+    grid-template-rows: 13% 18% 69%;
+    grid-template-areas:
+        "header header header header header-one header-two"
+        "naviga naviga naviga naviga naviga naviga"
+        "main-one main main main main main";
+}
+.paint {
+    grid-area: naviga;
+    background-color: var(--back-ground);
+}
+.paint-two {
+    grid-area: main-one;
+    background-color: var(--back-ground);
+}
+.paint-three {
+    grid-area: header-two;
+    background-color: var(--back-ground);
+    border-top: 30px solid var(--decorating);
+}
+.paint-four {
+     display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    grid-area: header-one;
+     background-color: var(--decorating); 
+}
+ .paint-four div {
+    top: 30px;
+    left: 29px;
+    width: 0;
+    height: 0;
+    border-left: 90px solid #055659;
+    border-bottom: 88px solid #03161D;
+    background-color: var(--back-ground);
+} 
+
+.logo {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: var(--back-ground);
+    background-image: url("./assets/images/logopalta.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    writing-mode: vertical-lr;
+    text-align: center;
+    font-family: 'Antonio', sans-serif;
+    color: var(--letter);
+    background-color: var(--decorating);
+}
+.title {
+    grid-column: 5 / 7;
+    grid-row: 2 / 3;
+    background-color: var(--back-ground);
+    display: flex;
+    align-items: center;
+}
+.image-one {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    background-color: var(--decorating);
+    display: flex;
+    align-items: flex-end;
+}
+.image-two {
+    grid-column: 6 / 7;
+    grid-row: 3 / 4;
+    background-color: var(--decorating);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.text-one {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    line-height: 3.8rem;
+    transform: rotate(180deg);
+}
+.text-main {
+    font-family: 'Zen Dots', cursive;
+    font-size: 8rem;
+    transform: rotate(180deg);
+}
+div .line {
+    position: absolute;
+    width: 81px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text span {
+    position: absolute;
+    top: -29px;
+    width: 7px;
+    height: 550px;
+    background-color: var(--letter);
+}
+.image-one div {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid var(--letter);
+}
+.main-title {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 8rem;
+}
+.text-title{
+    font-size: 2rem;
+    font-family:  'Antonio', sans-serif;
+}
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--letter);
+}

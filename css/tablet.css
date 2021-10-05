@@ -1,0 +1,55 @@
+.product-cards--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: 0 auto;
+}
+.product-datail--card {
+    margin: 15px auto;
+}
+.plans-container--slider {
+    justify-content: center;
+    
+}
+/* .main-tables-cotainer {
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+    background-color: fuchsia;
+} */
+.main-tables-container{
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+}
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+}
+.left a {
+    padding: 10px;
+    font-size: 1.6rem;
+}
+.left ul {
+    display: flex;
+}
+.right div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right {
+    align-items: flex-end;
+    padding-right: 10px;
+    justify-content: center;
+}
+.right p{
+    font-size: 1rem;
+}  
